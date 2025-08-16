@@ -20,3 +20,16 @@
   --secondary-color: #20212c;
   --primary-font-color: #ffffff;
 }
+/* ================
+   Base Elements
+================ */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--secondary-color);
+  font-size: 1rem;
+}
