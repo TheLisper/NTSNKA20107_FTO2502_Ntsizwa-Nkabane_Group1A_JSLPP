@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Main stylesheet for kanban-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=plus+Jakarta+sans:ital,wght@0,400;600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.svg" />
+    <title>Kanban Task</title>
+  </head>
+  <body>
+    <!--sidebar navigation for boards and theme toogle-->
+    <nav class="side-bar desktop-side-bar" id="side-bar-div">
+      <div id="top-sidebar">
+        <div id="side-logo-div">
+          <img id="logo" src="assets/logo-light.svg" alt="logo-light" />
+          <img id="dark-logo" src="assets/logo-dark.svg" alt="logo-dark" />
+        </div>
+        <div class="boards-nav-links-div" id="boards-nav-links-div">
+          <h4 id="headline-sidepanel">ALL BOARDS(1)</h4>
+          <button class="board-btn">Launch Career</button>
+        </div>
+      </div>
+
+      <!--theme toggle-->
+      <div id="bottom-sidebar">
+        <div class="theme-toggle-container sidebar-desktop-dark-container">
+          <img
+            class="light-mode-icon"
+            src="./assets/icon-light-theme.svg"
+            alt="light theme icon"
+          />
+          <div class="toogle-theme-btn siddebar-desktop-dark-button">
+            <div class="switch-circle"></div>
+          </div>
+          <img
+            class="dark-mode-icon"
+            src="./assets/icon-dark-theme.svg"
+            alt="dark theme icon"
+          />
+        </div>
+        <!--sidebar toggle-->
+        <div
+          id="sidebar-toggle-container"
+          class="sidebar-desktop-dark-container"
+        >
+          <span id="close-sidebar-icon">🚫</span>
+          <span id="close-sidebar-text">Hide Sidebar</span>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
