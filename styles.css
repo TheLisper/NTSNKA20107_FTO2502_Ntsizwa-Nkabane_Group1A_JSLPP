@@ -33,3 +33,140 @@ body {
   background-color: var(--secondary-color);
   font-size: 1rem;
 }
+/* ================
+   Sidebar Layout
+================ */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  border-right: 1px solid #e4ebfa;
+  width: var(--sidebar-width);
+  height: 100vh;
+}
+
+#side-logo-div {
+  margin: 33px 113px 54px 34px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo {
+  width: 100%;
+}
+
+#dark-logo {
+  width: 100%;
+  display: none;
+}
+
+.boards-nav-links-div {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-font-color);
+}
+
+#headline-sidepanel {
+  padding: 0 12px 0 50px;
+}
+
+h4 {
+  color: var(--secondary-font-color);
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+}
+
+.board-btn,
+#sidebar-toggle-container {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0 100px 100px 0;
+  height: 48px;
+  width: 276px;
+  padding: 28px 12px 28px 50px;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.board-btn {
+  gap: 10px;
+  background-color: var(--tertiary-purple-color);
+  color: #ffffff !important;
+}
+
+/* Bottom sidebar */
+
+#bottom-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 1rem;
+}
+
+/* Hide sidebar */
+
+#sidebar-toggle-container {
+  gap: 40px;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-purple-color);
+  transition: all 600ms ease;
+}
+
+#sidebar-toggle-container:hover,
+#sidebar-toggle-container:active {
+  box-shadow: var(--secondary-box-shadow);
+}
+
+body.dark #close-sidebar-text {
+  color: white;
+}
+
+/* Theme switch */
+
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  margin: 0 2rem 0 1rem;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  border-radius: 6px;
+}
+
+.toggle-theme-btn {
+  background-color: var(--tertiary-purple-color);
+  width: 40px;
+  height: 20px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 600ms ease;
+}
+
+.toggle-theme-btn:hover,
+.toggle-theme-btn:active {
+  box-shadow: 0px 0px 12px rgba(54, 78, 126, 0.5);
+}
+
+.switch-circle {
+  background-color: white !important;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 600ms ease;
+  transform: translateX(4px);
+}
+
+.theme-dark-clicked {
+  transform: translateX(22px);
+}
