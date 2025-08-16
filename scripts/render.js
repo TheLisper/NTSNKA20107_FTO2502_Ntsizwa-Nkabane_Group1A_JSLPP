@@ -12,3 +12,18 @@ export function renderAllTasks(tasks){
     renderAllTasks(tasks,containers);
 }
 
+/**
+ * Retrieves the task containers (Todo, Doing, Done) from the DOM.
+ *
+ * @returns {Object} An object containing the three task containers.
+ * @property {HTMLElement} todo - The container for "Todo" tasks.
+ * @property {HTMLElement} doing - The container for "Doing" tasks.
+ * @property {HTMLElement} done - The container for "Done" tasks.
+ */
+function getTaskContainers() {
+  return {
+    todo: document.getElementById("todo-tasks-container"),
+    doing: document.getElementById("doing-tasks-container"),
+    done: document.getElementById("done-tasks-container"),
+  };
+}
