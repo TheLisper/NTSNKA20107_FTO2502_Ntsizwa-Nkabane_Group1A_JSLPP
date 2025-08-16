@@ -76,8 +76,43 @@
             </div>
 
             <!--containers and tasks-->
-            <button
+            <button class="add-task-btn" id="desktop-add-task-btn">
+                + <span id="hide-add-new-task">Add New Task</span>
+            </button>
         </header>
+
+        <div class="container container-hide">
+        <main class="card-column-main">
+          <!-- Tasks -->
+          <div class="column-div" data-status="todo">
+            <div id="todo-head-div" class="column-head-div">
+              <span class="dot" id="todo-dot"></span>
+              <h4 id="toDoText" class="columnHeader">TODO <span id="num-tasks-todo"></span></h4>
+            </div>
+            <!-- TO-DO container -->
+            <div class="tasks-container" id="todo-tasks-container"></div>
+          </div>
+          <!-- DOING -->
+          <div class="column-div" data-status="doing">
+            <div id="doing-head-div" class="column-head-div">
+              <span class="dot" id="doing-dot"></span>
+              <h4 id="doingText" class="columnHeader">DOING <span id="num-tasks-doing"></span></h4>
+            </div>
+            <!--DOING container-->
+            <div class="tasks-container" id="doing-tasks-container"></div>
+          </div>
+          <!-- DONE-->
+          <div class="column-div" data-status="done">
+            <div id="done-head-div" class="column-head-div">
+              <span class="dot" id="done-dot"></span>
+              <h4 id="doneText" class="columnHeader">DONE <span id="num-tasks-done"></span></h4>
+            </div>
+            <!-- DONE container -->
+            <div class="tasks-container" id="done-tasks-container"></div>
+          </div>
+        </main>
+      </div>
+      <div id="icon-hide-menu"><span>👀</span></div>
     </div>
   </body>
 </html>
